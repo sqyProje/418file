@@ -17,14 +17,11 @@
 
       </div>
       <el-dropdown class="user-name" >
-        <span class="el-dropdown-link">
-          admin<i class="el-icon-arrow-down el-icon--right"></i>
-        </span>
+        <span class="el-dropdown-link">admin<i class="el-icon-arrow-down el-icon--right"></i></span>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item>个人中心</el-dropdown-item>
           <el-dropdown-item>退出</el-dropdown-item>
           <el-dropdown-item>注册</el-dropdown-item>
-
         </el-dropdown-menu>
       </el-dropdown>
     </div>
@@ -42,7 +39,9 @@ export default {
       fullscreen:false
     }
   },
-  components: {ElHeader},
+  components: {
+    ElHeader
+  },
   methods:{
     collapseChage() {
       this.collapse= !this.collapse
